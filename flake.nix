@@ -35,7 +35,7 @@
       };
     };
 
-    templates = {
+    templates = rec {
       elixir = {
         path = ./templates/elixir;
         description = "Starter template for Elixir with Mix";
@@ -45,6 +45,10 @@
         path = ./templates/erlang;
         description = "Starter template for Erlang with Rebar3 and ErlangLS";
       };
+
+      # Aliases
+      ex = elixir;
+      erl = erlang;
     };
   };
 }
