@@ -22,6 +22,7 @@
       # encryption
       cryptsetup
       # development
+      biome
       vscode
       # daily
       google-chrome
