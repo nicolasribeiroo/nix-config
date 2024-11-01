@@ -22,8 +22,8 @@
       # encryption
       cryptsetup
       # development
-      biome
-      vscode
+      podman-tui
+      termius
       # daily
       google-chrome
       vesktop
