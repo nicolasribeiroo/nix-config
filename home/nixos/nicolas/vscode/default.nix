@@ -11,7 +11,7 @@ in {
         elixir-lsp.vscode-elixir-ls
         rust-lang.rust-analyzer
         tamasfe.even-better-toml
-        # biomejs.biome
+        biomejs.biome
         dbaeumer.vscode-eslint
         esbenp.prettier-vscode
         eamodio.gitlens

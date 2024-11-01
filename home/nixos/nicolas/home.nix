@@ -23,6 +23,7 @@
       cryptsetup
       # development
       podman-tui
+      biome
       termius
       # daily
       google-chrome
