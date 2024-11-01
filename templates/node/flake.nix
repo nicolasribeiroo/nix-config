@@ -18,10 +18,8 @@
       in {
         devShell = pkgs.mkShell {
           packages = [
-            node.withPackages
-            (nodePackages: [
-              nodePackages.pnpm
-            ])
+            node
+            node.pkgs.pnpm
           ];
         };
       }
