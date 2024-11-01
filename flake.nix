@@ -46,6 +46,11 @@
         description = "Starter template for Erlang with Rebar3 and ErlangLS";
       };
 
+      node = {
+        path = ./templates/node;
+        description = "Starter template for Node.js with pNPM";
+      };
+
       # Aliases
       ex = elixir;
       erl = erlang;
