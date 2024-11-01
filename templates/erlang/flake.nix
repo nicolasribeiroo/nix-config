@@ -14,7 +14,7 @@
     flake-utils.lib.eachDefaultSystem (
       system: let
         pkgs = nixpkgs.legacyPackages.${system};
-        erlang = pkgs.beam.packages.erlangR27;
+        erlang = pkgs.beam.packages.erlang_27;
       in {
         devShell = pkgs.mkShell {
           packages = [
