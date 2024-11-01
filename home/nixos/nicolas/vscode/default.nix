@@ -5,15 +5,18 @@ in {
     enable = true;
     userSettings = user-config;
 
-    extensions = (with pkgs.vscode-extensions; [
-      jnoortheen.nix-ide
-      elixir-lsp.vscode-elixir-ls
-      rust-lang.rust-analyzer
-      tamasfe.even-better-toml
-      biomejs.biome
-      eamodio.gitlens
-      streetsidesoftware.code-spell-checker
-    ]) ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
+    extensions =
+      (with pkgs.vscode-extensions; [
+        jnoortheen.nix-ide
+        elixir-lsp.vscode-elixir-ls
+        rust-lang.rust-analyzer
+        tamasfe.even-better-toml
+        biomejs.biome
+        eamodio.gitlens
+        streetsidesoftware.code-spell-checker
+        prisma.prisma
+      ])
+      ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
         {
           name = "erlang-ls";
           publisher = "erlang-ls";
@@ -62,6 +65,6 @@ in {
           version = "0.13.46";
           sha256 = "sha256-8bbRq4kMUhN/Pw5i3aVUbLWxwMzecSngp3dcY4zhw3Q=";
         }
-    ];
+      ];
   };
 }

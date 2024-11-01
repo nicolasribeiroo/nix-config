@@ -34,5 +34,17 @@
         ];
       };
     };
+
+    templates = {
+      elixir = {
+        path = ./templates/elixir;
+        description = "Starter template for Elixir with Mix";
+      };
+
+      erlang = {
+        path = ./templates/erlang;
+        description = "Starter template for Erlang with Rebar3 and ErlangLS";
+      };
+    };
   };
 }
