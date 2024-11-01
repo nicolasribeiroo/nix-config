@@ -22,7 +22,10 @@
       # encryption
       cryptsetup
       # development
-      podman-tui
+      dive # look into docker image layers
+      docker-compose # start group of containers for dev
+      podman-compose # start group of containers for dev
+      podman-tui # status of containers in the terminal
       vscode
       # daily
       google-chrome
