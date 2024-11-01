@@ -11,6 +11,8 @@
       function sys-up
         sudo nixos-rebuild switch --flake $argv --upgrade
       end
+
+      starship init fish | source
     '';
   };
 }
