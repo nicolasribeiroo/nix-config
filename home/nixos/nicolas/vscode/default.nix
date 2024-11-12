@@ -18,6 +18,7 @@ in {
         streetsidesoftware.code-spell-checker
         prisma.prisma
         denoland.vscode-deno
+        ms-azuretools.vscode-docker
       ])
       ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
         {
