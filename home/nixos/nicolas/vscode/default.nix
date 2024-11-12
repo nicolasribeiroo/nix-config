@@ -17,6 +17,7 @@ in {
         eamodio.gitlens
         streetsidesoftware.code-spell-checker
         prisma.prisma
+        denoland.vscode-deno
       ])
       ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
         {
