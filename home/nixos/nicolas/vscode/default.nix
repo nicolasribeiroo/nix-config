@@ -1,9 +1,13 @@
 {pkgs, ...}: let
   user-config = builtins.fromJSON (builtins.readFile ./config.json);
 in {
+  home.file.".config/Code/User/settings.json".text = ''
+    ${builtins.toJSON user-config}
+  '';
+
   programs.vscode = {
     enable = true;
-    userSettings = user-config;
+    # userSettings = user-config;
 
     extensions =
       (with pkgs.vscode-extensions; [
