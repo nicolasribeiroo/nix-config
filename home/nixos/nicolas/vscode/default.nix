@@ -1,9 +1,12 @@
 {pkgs, ...}: let
   user-config = builtins.fromJSON (builtins.readFile ./config.json);
 in {
-  home.file.".config/Code/User/settings.json".text = ''
-    ${builtins.toJSON user-config}
-  '';
+  home.file.".config/Code/User/settings.json" = {
+    recursive = true;
+    text = ''
+      ${builtins.toJSON user-config}
+    '';
+  };
 
   programs.vscode = {
     enable = true;
