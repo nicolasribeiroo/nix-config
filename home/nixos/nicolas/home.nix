@@ -7,7 +7,6 @@
     ./vscode/default.nix
   ];
 
-  nixpkgs.config.allowUnfree = true;
   programs.home-manager.enable = true;
 
   home = {
@@ -25,6 +24,9 @@
       podman-tui
       biome
       termius
+      httpie
+      # lol
+      httpie-desktop
       # daily
       google-chrome
       vesktop

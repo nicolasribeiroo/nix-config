@@ -1,4 +1,6 @@
 {...}: {
+  services.tailscale.enable = true;
+
   networking = {
     # Enable networking
     networkmanager.enable = true;
