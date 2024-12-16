@@ -17,7 +17,6 @@ in {
         eamodio.gitlens
         streetsidesoftware.code-spell-checker
         styled-components.vscode-styled-components
-        paulmolluzzo.convert-css-in-js
         prisma.prisma
         denoland.vscode-deno
         ms-azuretools.vscode-docker
