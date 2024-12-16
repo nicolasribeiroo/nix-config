@@ -3,8 +3,12 @@
 
   hardware = {
     graphics.enable = true;
-    nvidia.open = true;
-    nvidia.modesetting.enable = true;
-    nvidia.nvidiaSettings = true;
+
+    nvidia = {
+      open = false;
+      modesetting.enable = true;
+      nvidiaSettings = true;
+      powerManagement.enable = true;
+    };
   };
 }
