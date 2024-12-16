@@ -13,8 +13,10 @@
     ../../shared/local.nix
     ../../shared/networking.nix
     ../../shared/nix.nix
+    ../../shared/nvidia.nix
     ../../shared/shell.nix
     ../../shared/virtualisation.nix
+    ../../shared/steam.nix
     ../../shared/sound.nix
   ];
 

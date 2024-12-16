@@ -4,7 +4,7 @@
   networking = {
     # Enable networking
     networkmanager.enable = true;
-    nameservers = ["1.0.0.1" "1.1.1.1" "100.100.100.100"];
+    nameservers = ["1.1.1.1" "8.8.8.8" "100.100.100.100"];
     search = ["persian-map.ts.net"];
 
     # Open ports in the firewall.

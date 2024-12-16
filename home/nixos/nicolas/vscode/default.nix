@@ -1,16 +1,9 @@
 {pkgs, ...}: let
   user-config = builtins.fromJSON (builtins.readFile ./config.json);
 in {
-  home.file.".config/Code/User/settings.json" = {
-    recursive = true;
-    text = ''
-      ${builtins.toJSON user-config}
-    '';
-  };
-
   programs.vscode = {
     enable = true;
-    # userSettings = user-config;
+    userSettings = user-config;
 
     extensions =
       (with pkgs.vscode-extensions; [
@@ -23,6 +16,8 @@ in {
         esbenp.prettier-vscode
         eamodio.gitlens
         streetsidesoftware.code-spell-checker
+        styled-components.vscode-styled-components
+        paulmolluzzo.convert-css-in-js
         prisma.prisma
         denoland.vscode-deno
         ms-azuretools.vscode-docker

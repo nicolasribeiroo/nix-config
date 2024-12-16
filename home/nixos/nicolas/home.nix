@@ -25,6 +25,7 @@
       biome
       termius
       httpie
+      btop
       # lol
       httpie-desktop
       # daily
