@@ -1,7 +1,10 @@
 {...}: {
   services.xserver.videoDrivers = ["nvidia"];
+
   hardware = {
-    opengl.enable = true;
+    graphics.enable = true;
+    nvidia.open = true;
     nvidia.modesetting.enable = true;
+    nvidia.nvidiaSettings = true;
   };
 }
